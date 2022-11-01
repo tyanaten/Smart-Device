@@ -392,6 +392,38 @@ template {
   src: url("../fonts/.woff2") format("woff2"), url("../fonts/.woff") format("woff");
 }
 
+@font-face {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-Mono-Regular.woff2") format("woff2"), url("../fonts/pt-Mono-Regular.woff2") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-Medium.woff2") format("woff2"), url("../fonts/roboto-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/robotoCondensed-Regular.woff2") format("woff2"), url("../fonts/robotoCondensed-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/robotoCondensed-Bold.woff2") format("woff2"), url("../fonts/robotoCondensed-Bold.woff") format("woff");
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -752,6 +784,23 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.main-index {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  background-color: #ffc0cb;
+}
+
+.main-footer {
+  height: 50px;
+  background-color: #ffff00;
+}
+
+.main-header {
+  height: 50px;
+  background-color: #0000ff;
 }
 
 /* @mixin hover-focus {
