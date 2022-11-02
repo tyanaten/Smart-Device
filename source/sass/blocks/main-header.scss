@@ -1,4 +1,56 @@
 .main-header {
-  height: 50px;
-  background-color: #0000ff;
+  min-width: $vp-320;
+  height: 120px;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  @include vp-1023 {
+    height: 100px;
+  }
+
+  @include vp-767 {
+    height: 70px;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 63.6%;
+  max-width: $vr-1220;
+
+  @include vp-1023 {
+    min-width: $vr-670;
+    width: 87%;
+  }
+
+  @include vp-767 {
+    min-width: $vr-270;
+    width: 84.3%;
+  }
+}
+
+.main-header__logo {
+  margin-top: 30px;
+  margin-right: 13.1%;
+
+  @include vp-1023 {
+    margin-top: 20px;
+    margin-right: auto;
+  }
+
+  @include vp-767 {
+    margin-top: 15px;
+  }
+}
+
+.main-header__action-buttons {
+  margin-top: 45px;
+
+  @include vp-1023 {
+    margin-top: 20px;
+  }
+
+  @include vp-767 {
+    margin-top: 10px;
+  }
 }
