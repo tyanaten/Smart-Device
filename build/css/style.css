@@ -639,14 +639,29 @@ button,
   padding: 0 40px;
 }
 
+.link-style {
+  text-decoration: none;
+}
+
+.list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 10px 20px;
+  display: block;
+  padding: 10px 15px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: #f2f5f7;
-  background-color: #2c39f2;
-  border: none;
+  background-color: inherit;
+  border: 1px solid #f2f5f7;
+  border-radius: 3px;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -800,18 +815,26 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 0 auto;
-  width: 63.6%;
+  width: 89.7%;
   max-width: 1220px;
 }
 
 .main-header__logo {
   margin-top: 30px;
-  margin-right: 13.1%;
 }
 
 .main-header__action-buttons {
   margin-top: 45px;
+}
+
+.main-header__set-call {
+  width: 160px;
+  height: 40px;
+  margin: 35px 5.1% 0 0;
 }
 
 .logo-header__link {
@@ -849,6 +872,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: clamp(365px, 37.8%, 461px);
 }
 
 .action__link {
@@ -864,10 +891,6 @@ button,
   justify-content: center;
   line-height: 18px;
   color: #f2f5f7;
-}
-
-.action__link:not(:last-child) {
-  margin-right: 35.7%;
 }
 
 .action__link p {
@@ -893,25 +916,77 @@ button,
   background-repeat: no-repeat;
 }
 
-.set-call-button {
-  display: block;
-  height: 40px;
-  margin: 35px 5.1% auto auto;
-  margin-right: 5.1%;
-  width: 160px;
-  padding: 10px 15px;
+.main-section {
+  position: relative;
+  top: -120px;
+  z-index: -1;
+  margin-bottom: -120px;
+  padding-top: 305px;
+  min-height: 880px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/microchip-1x.jpg");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/microchip-1x.jpg");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/microchip-1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.main-section h1 {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 14px;
+  font-size: 80px;
   font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.05em;
+  line-height: 94px;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #f2f5f7;
-  background: none;
-  border: 1px solid #f2f5f7;
-  border-radius: 3px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+}
+
+.main-section p {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #f2f5f7;
+}
+
+.main-section__button {
+  width: 410px;
+  height: 55px;
+  padding: 15px 25px;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #00b2ff;
+  border: none;
+}
+
+.main-section__wrapper {
+  width: 89.7%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-left: clamp(50px, 10.2%, 120px);
+}
+
+.benefits__wrapper {
+  width: 89.7%;
+  max-width: 1220px;
+  margin: 120px auto;
+  outline: 1px solid #ffff00;
+}
+
+.privilege-list {
+  display: -ms-grid;
+  display: grid;
+}
+
+.privilege-list__item {
+  outline: 1px solid #ff0000;
+}
+
+.privilege-list__item svg {
+  fill: #00b2ff;
 }
 
 /* @mixin hover-focus {
@@ -955,25 +1030,6 @@ button,
   }
 */
 
-@media (max-width: 1750px) {
-  .action__link p {
-    display: none;
-  }
-
-  .action__link {
-    min-width: 40px;
-    height: 40px;
-  }
-
-  .action__link:not(:last-child) {
-    margin-right: 20px;
-  }
-
-  .action__icon {
-    margin: auto;
-  }
-}
-
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
@@ -1003,8 +1059,66 @@ button,
     margin-top: 20px;
   }
 
-  .set-call-button {
+  .main-header__set-call {
     display: none;
+  }
+
+  .action {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: 3%;
+  }
+
+  .action__link p {
+    display: none;
+  }
+
+  .action__link {
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .action__link:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .action__icon {
+    margin: auto;
+  }
+
+  .main-section {
+    top: -100px;
+    margin-bottom: -100px;
+    padding-top: 180px;
+    min-height: 640px;
+    background-position: 20% 0;
+  }
+
+  .main-section h1 {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 20px;
+  }
+
+  .main-section p {
+    margin-bottom: 50px;
+  }
+
+  .main-section__button {
+    margin-left: clamp(5px, 6.7%, 60px);
+  }
+
+  .main-section__wrapper {
+    min-width: 670px;
+    width: 87%;
+    padding-left: 0;
+  }
+
+  .benefits__wrapper {
+    min-width: 670px;
+    width: 87%;
+    margin: 80px auto;
   }
 }
 
@@ -1052,10 +1166,56 @@ button,
   .logo-header__text {
     display: none;
   }
+
+  .main-section {
+    top: -70px;
+    margin-bottom: -70px;
+    padding-top: 150px;
+    min-height: 560px;
+    background-position: 26% 0;
+  }
+
+  .main-section h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .main-section p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .main-section__button {
+    width: 270px;
+    height: 40px;
+    margin-left: 0;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .main-section__wrapper {
+    min-width: 270px;
+    width: 84.3%;
+  }
+
+  .benefits__wrapper {
+    min-width: 270px;
+    width: 84.3%;
+    margin: 50px auto;
+  }
 }
 
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .main-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/microchip-2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/microchip-2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/microchip-2x.jpg");
   }
 }

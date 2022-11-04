@@ -1,5 +1,12 @@
 .action {
   display: flex;
+  justify-content: space-between;
+  width: clamp(365px, 37.8%, 461px);
+
+  @include vp-1023 {
+    width: max-content;
+    margin-right: 3%;
+  }
 }
 
 .action__link {
@@ -10,19 +17,15 @@
   line-height: 18px;
   color: $color-default-white;
 
-  &:not(:last-child) {
-    margin-right: 35.7%;
-  }
-
   p {
     margin: 0;
 
-    @media (max-width: 1750px) {
+    @include vp-1023 {
       display: none;
     }
   }
 
-  @media (max-width: 1750px) {
+  @include vp-1023 {
     min-width: 40px;
     height: 40px;
 
@@ -50,7 +53,7 @@
     background-repeat: no-repeat;
   }
 
-  @media (max-width: 1750px) {
+  @include vp-1023 {
     margin: auto;
   }
 }

@@ -14,6 +14,8 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/link-style.scss";
+@import "global/list-style.scss";
 
 // Blocks
 // ---------------------------------
@@ -25,7 +27,9 @@
 @import "blocks/main-header.scss";
 @import "blocks/logo-header.scss";
 @import "blocks/action.scss";
-@import "blocks/set-call-button.scss";
+@import "blocks/main-section.scss";
+@import "blocks/benefits.scss";
+@import "blocks/privilege.scss";
 
 // ---------------------------------
 

@@ -14,8 +14,9 @@
 
 .main-header__wrapper {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
-  width: 63.6%;
+  width: 89.7%;
   max-width: $vr-1220;
 
   @include vp-1023 {
@@ -31,7 +32,6 @@
 
 .main-header__logo {
   margin-top: 30px;
-  margin-right: 13.1%;
 
   @include vp-1023 {
     margin-top: 20px;
@@ -52,5 +52,15 @@
 
   @include vp-767 {
     margin-top: 10px;
+  }
+}
+
+.main-header__set-call {
+  width: 160px;
+  height: 40px;
+  margin: 35px 5.1% 0 0;
+
+  @include vp-1023 {
+    display: none;
   }
 }

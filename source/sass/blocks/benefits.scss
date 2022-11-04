@@ -1,0 +1,18 @@
+.benefits__wrapper {
+  width: 89.7%;
+  max-width: $vr-1220;
+  margin: 120px auto;
+  outline: 1px solid #ffff00;
+
+  @include vp-1023 {
+    min-width: $vr-670;
+    width: 87%;
+    margin: 80px auto;
+  }
+
+  @include vp-767 {
+    min-width: $vr-270;
+    width: 84.3%;
+    margin: 50px auto;
+  }
+}

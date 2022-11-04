@@ -1,0 +1,11 @@
+.privilege-list {
+  display: grid;
+}
+
+.privilege-list__item {
+  outline: 1px solid #ff0000;
+
+  svg {
+    fill: $color-blue;
+  }
+}
