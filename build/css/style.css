@@ -436,7 +436,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "PT Mono", "Arial", sans-serif;
-  color: #000000;
+  color: #041827;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -449,7 +449,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #041827;
   text-decoration: none;
 }
 
@@ -467,7 +467,7 @@ textarea {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #f2f5f7;
   box-shadow: inset 0 0 0 1000px #f2f5f7;
-  -webkit-text-fill-color: #000000;
+  -webkit-text-fill-color: #041827;
 }
 
 input,
@@ -697,7 +697,7 @@ button,
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(4, 24, 39, 0.8);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -973,20 +973,54 @@ button,
   width: 89.7%;
   max-width: 1220px;
   margin: 120px auto;
-  outline: 1px solid #ffff00;
 }
 
 .privilege-list {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (clamp(300px, 48.8%, 596px))[2];
+  grid-template-columns: repeat(2, clamp(300px, 48.8%, 596px));
+  -ms-grid-rows: (300px)[2];
+  grid-template-rows: repeat(2, 300px);
+  gap: 29px 31px;
+  width: 100%;
 }
 
 .privilege-list__item {
-  outline: 1px solid #ff0000;
+  position: relative;
+  padding: 40px 45px;
 }
 
 .privilege-list__item svg {
+  margin-bottom: 20px;
   fill: #00b2ff;
+}
+
+.privilege-list__item h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00b2ff;
+}
+
+.privilege-list__item p {
+  margin: 0;
+  font-family: "PT Mono", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+}
+
+.privilege-list__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #00b2ff;
 }
 
 /* @mixin hover-focus {
@@ -1120,6 +1154,23 @@ button,
     width: 87%;
     margin: 80px auto;
   }
+
+  .privilege-list {
+    -ms-grid-columns: (clamp(300px, 47.8%, 450px))[2];
+    grid-template-columns: repeat(2, clamp(300px, 47.8%, 450px));
+    -ms-grid-rows: (360px)[2];
+    grid-template-rows: repeat(2, 360px);
+    gap: 30px 29px;
+  }
+
+  .privilege-list__item {
+    padding: 40px 30px 35px 45px;
+  }
+
+  .privilege-list__item {
+    padding: 30px;
+    padding-bottom: 35px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1204,11 +1255,49 @@ button,
     width: 84.3%;
     margin: 50px auto;
   }
+
+  .privilege-list {
+    -ms-grid-columns: clamp(270px, 100%, 768px);
+    grid-template-columns: clamp(270px, 100%, 768px);
+    -ms-grid-rows: (auto)[4];
+    grid-template-rows: repeat(4, auto);
+    gap: 30px 0;
+  }
+
+  .privilege-list__item h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .privilege-list__item p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .privilege-list__item {
+    min-height: 325px;
+  }
 }
 
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+
+  .privilege-list__item:hover:not(.focus-visible) {
+    background-color: #00b2ff;
+  }
+
+  .privilege-list__item:hover:not(.focus-visible) svg {
+    fill: #f2f5f7;
+  }
+
+  .privilege-list__item:hover:not(.focus-visible) h3 {
+    color: #f2f5f7;
+  }
+
+  .privilege-list__item:hover:not(.focus-visible) p {
+    color: #f2f5f7;
   }
 }
 
