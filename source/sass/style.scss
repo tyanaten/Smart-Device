@@ -14,7 +14,6 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-@import "global/link-style.scss";
 @import "global/list-style.scss";
 
 // Blocks
@@ -31,6 +30,8 @@
 @import "blocks/benefits.scss";
 @import "blocks/privilege.scss";
 @import "blocks/company-info.scss";
+@import "blocks/product-list.scss";
+@import "blocks/products.scss";
 
 // ---------------------------------
 

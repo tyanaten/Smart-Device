@@ -10,7 +10,9 @@
   background-size: 150px 320px;
 
   @include retina {
-    background-image: url("../img/year-2x.png");
+    @media (min-width: 768px) {
+      background-image: url("../img/year-2x.png");
+    }
   }
 
   @include vp-1023 {
