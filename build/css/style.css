@@ -919,6 +919,7 @@ button,
   margin-bottom: -120px;
   padding-top: 305px;
   min-height: 880px;
+  background-color: hsl(204deg, 67%, 20%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/microchip-1x.jpg");
   background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/microchip-1x.jpg");
   background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/microchip-1x.jpg");
@@ -1077,6 +1078,7 @@ button,
   width: 100%;
   min-height: 650px;
   padding: 50px 0 0 40px;
+  background-color: hsl(204deg, 67%, 20%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/microchip-1x.jpg");
   background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-1x.jpg");
   background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-1x.jpg");
@@ -1138,6 +1140,253 @@ button,
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
+}
+
+.form-section {
+  position: relative;
+  background-color: #00b3ff;
+}
+
+.form-section p {
+  margin: 0;
+  padding-left: 5px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 840px 972px 0 0;
+  border-color: rgba(4, 24, 39, 0.5) transparent transparent transparent;
+}
+
+.form-section .form-section__subtitile {
+  margin-bottom: 15px;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.form-section__wrapper {
+  position: relative;
+  width: 89.7%;
+  max-width: 1220px;
+  min-height: 840px;
+  margin: 0 auto;
+  padding: 175px 0;
+}
+
+.form-section__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 246px;
+  left: 0;
+  z-index: 10;
+  width: clamp(150px, 41.8%, 510px);
+  height: 285px;
+  background-image: url("../img/paper-airplane-1x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.form-section__form-wrapper {
+  position: relative;
+  z-index: 10;
+  width: clamp(200px, 48%, 585px);
+  margin-left: auto;
+  margin-right: 12px;
+}
+
+.form-section__form {
+  margin-top: 35px;
+  padding-left: 5px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form__fields-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: 50px 155px;
+  grid-template-rows: 50px 155px;
+  gap: 20px 30px;
+  margin-bottom: 35px;
+}
+
+.form__field {
+  display: block;
+}
+
+.form__field input {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+}
+
+.form__field input::-webkit-input-placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field input::-moz-placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field input:-ms-input-placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field input::-ms-input-placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field input::placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field input.focus-visible:focus {
+  opacity: 0.8;
+  outline: 1px solid #ffffff;
+}
+
+.form__field textarea {
+  width: 100%;
+  height: 100%;
+  padding: 25px 15px;
+  line-height: 22px;
+  color: #ffffff;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+}
+
+.form__field textarea::-webkit-input-placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field textarea::-moz-placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field textarea:-ms-input-placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field textarea::-ms-input-placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field textarea::placeholder {
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field textarea.focus-visible:focus {
+  opacity: 0.8;
+  outline: 1px solid #ffffff;
+}
+
+.form__field--textarea {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+}
+
+.form__submit-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.form__submit-button {
+  width: clamp(205px, 45.3%, 265px);
+  height: 45px;
+  padding: 15px 25px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: #041827;
+  border: none;
+}
+
+.form__checkbox {
+  width: clamp(100px, 44.4%, 260px);
+  margin-top: 15px;
+}
+
+.custom-checkbox span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.custom-checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.custom-checkbox input[type=checkbox]:checked + .custom-checkbox__mark::before {
+  display: block;
+}
+
+.custom-checkbox__mark {
+  position: relative;
+  display: block;
+  min-width: 15px;
+  height: 15px;
+  margin-top: 7px;
+  margin-right: 11px;
+  background-color: inherit;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.custom-checkbox__mark::before {
+  position: absolute;
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/svg/check.svg");
+  background-size: 7px 4px;
+  background-position: top 5px left 3px;
+  background-repeat: no-repeat;
 }
 
 /* @mixin hover-focus {
@@ -1356,6 +1605,44 @@ button,
     width: 87%;
     padding: 60px 0 75px 0;
   }
+
+  .form-section p {
+    padding: 0;
+  }
+
+  .form-section::before {
+    display: none;
+  }
+
+  .form-section .form-section__subtitile {
+    margin-bottom: 10px;
+  }
+
+  .form-section__wrapper {
+    min-width: 670px;
+    width: 87%;
+    min-height: 100%;
+    padding: 50px 0 125px 0;
+  }
+
+  .form-section__wrapper::before {
+    display: none;
+  }
+
+  .form-section__form-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .form-section__form {
+    margin-top: 25px;
+    padding: 0;
+  }
+
+  .form__checkbox {
+    margin-top: 10px;
+    margin-right: clamp(40px, 9.3%, 60px);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1522,6 +1809,56 @@ button,
     font-size: 28px;
     line-height: 39px;
   }
+
+  .form-section p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .form-section .form-section__subtitile {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .form-section__wrapper {
+    min-width: 270px;
+    width: 84.3%;
+    padding-bottom: 90px;
+  }
+
+  .form__fields-wrapper {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: 50px 50px 180px;
+    grid-template-rows: 50px 50px 180px;
+    gap: 20px 0;
+    margin-bottom: 30px;
+  }
+
+  .form__field--textarea {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+  }
+
+  .form__submit-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form__submit-button {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .form__checkbox {
+    width: clamp(200px, 100%, 300px);
+    margin: 0 5px;
+  }
 }
 
 @media (hover: hover) {
@@ -1543,6 +1880,16 @@ button,
 
   .privilege-list__item:hover:not(.focus-visible) p {
     color: #f2f5f7;
+  }
+
+  .form__field input:hover:not(.focus-visible) {
+    opacity: 0.8;
+    outline: 1px solid #ffffff;
+  }
+
+  .form__field textarea:hover:not(.focus-visible) {
+    opacity: 0.8;
+    outline: 1px solid #ffffff;
   }
 }
 

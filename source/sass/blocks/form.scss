@@ -1,0 +1,114 @@
+.form {
+  width: 100%;
+}
+
+.form__fields-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 50px 155px;
+  gap: 20px 30px;
+  margin-bottom: 35px;
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 50px 180px;
+    gap: 20px 0;
+    margin-bottom: 30px;
+  }
+}
+
+.form__field {
+  display: block;
+
+  input {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    line-height: 22px;
+    color: #ffffff;
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    border: none;
+
+    &::placeholder {
+      line-height: 22px;
+      color: #ffffff;
+    }
+
+    @include hover-focus {
+      opacity: 0.8;
+      outline: 1px solid #ffffff;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 100%;
+    padding: 25px 15px;
+    line-height: 22px;
+    color: #ffffff;
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    border: none;
+
+    &::placeholder {
+      line-height: 22px;
+      color: #ffffff;
+    }
+
+    @include hover-focus {
+      opacity: 0.8;
+      outline: 1px solid #ffffff;
+    }
+  }
+
+  &--textarea {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    @include vp-767 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+}
+
+.form__submit-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.form__submit-button {
+  width: clamp(205px, 45.3%, 265px);
+  height: 45px;
+  padding: 15px 25px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: $color-default-black;
+  border: none;
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.form__checkbox {
+  width: clamp(100px, 44.4%, 260px);
+  margin-top: 15px;
+
+  @include vp-1023 {
+    margin-top: 10px;
+    margin-right: clamp(40px, 9.3%, 60px);
+  }
+
+  @include vp-767 {
+    width: clamp(200px, 100%, 300px);
+    margin: 0 5px;
+  }
+}
