@@ -1,0 +1,26 @@
+.contact-list {
+  width: 100%;
+}
+
+.contact-list__item {
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.7);
+
+  a {
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+
+    &:first-child {
+      margin-bottom: 15px;
+    }
+  }
+}

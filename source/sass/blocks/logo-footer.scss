@@ -1,0 +1,28 @@
+.logo-footer__link {
+  display: flex;
+
+  img {
+    margin-right: 15px;
+  }
+}
+
+.logo-footer__text {
+  color: $color-default-white;
+}
+
+.logo-footer__title {
+  margin: 5px 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.logo-footer__subtitle {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
