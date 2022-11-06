@@ -1,5 +1,6 @@
 .logo-header__link {
   display: flex;
+  cursor: pointer;
 
   img {
     margin-right: 15px;
@@ -9,6 +10,10 @@
       width: 35px;
       height: 35px;
     }
+  }
+
+  @include hover {
+    opacity: 0.8;
   }
 }
 

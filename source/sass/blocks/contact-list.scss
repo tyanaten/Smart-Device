@@ -9,6 +9,10 @@
   a {
     line-height: 22px;
     color: rgba(255, 255, 255, 0.7);
+
+    @include hover-focus {
+      color: $color-blue;
+    }
   }
 
   &:not(:last-child) {

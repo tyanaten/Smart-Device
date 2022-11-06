@@ -1,9 +1,13 @@
 .main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   min-width: $vp-320;
   height: 120px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 
   @include vp-1023 {
+    position: static;
     height: 100px;
   }
 

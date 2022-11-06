@@ -30,6 +30,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include hover {
+    border: 1px solid $color-blue;
+    opacity: 0.8;
+  }
+
   @include retina {
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-2x.jpg");
   }

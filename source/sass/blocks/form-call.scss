@@ -33,6 +33,10 @@
       opacity: 0.8;
       outline: 1px solid #ffffff;
     }
+
+    &:focus:required:invalid {
+      outline: 1px solid #ffffff;
+    }
   }
 
   textarea {

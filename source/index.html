@@ -119,9 +119,16 @@
                 Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
               </p>
               <p class="company-info__text">
-                Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.              </p>
+                Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span data-text-modile-hide>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
+              </p>
+              <p class="company-info__text" data-hide-text>
+                Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
+              </p>
+              <p class="company-info__text" data-hide-text>
+                Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.
+              </p>
             </div>
-            <button class="company-info__button btn">
+            <button class="company-info__button btn" data-button="more">
               Подробнее
             </button>
           </div>
@@ -175,11 +182,11 @@
                 <div class="form__fields-wrapper">
                   <div class="form__field">
                     <label class="form__input-label visually-hidden" for="name"></label>
-                    <input class="form__input" type="text" name="name" id="name" placeholder="Имя">
+                    <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required pattern="^[А-Яа-я-]+$" minlength="1">
                   </div>
                   <div class="form__field">
                     <label class="form__input-label visually-hidden" for="tel"></label>
-                    <input class="form__input" type="tel" name="tel" id="tel" placeholder="Телефон">
+                    <input class="form__input" type="tel" name="tel" id="tel" placeholder="Телефон" required>
                   </div>
                   <div class="form__field form__field--textarea">
                     <label class="form__input-label visually-hidden" for="question"></label>
@@ -192,7 +199,7 @@
                   </button>
                   <div class="form__checkbox custom-checkbox">
                     <label class="custom-checkbox__label">
-                      <input class="custom-checkbox__input visually-hidden" type="checkbox" name="agreement" checked>
+                      <input class="custom-checkbox__input visually-hidden" type="checkbox" name="agreement" required>
                       <span class="custom-checkbox__mark"></span>
                       <span class="custom-checkbox__label">
                         Я согласен на обработку  персональных данных
@@ -258,81 +265,89 @@
           </div>
           <div class="main-footer__links-wrapper">
             <section class="main-footer__footer-links">
-              <button class="main-footer__button" type="button">
-                <span class="visually-hidden">
-                  Закрыть
-                </span>
-              </button>
-              <h2 class="main-footer__section-title">
-                Разделы сайта
-              </h2>
-              <ul class="main-footer__site-list site-list list-style">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">
-                    О Компании
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">
-                    Продукты
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">
-                    Производство печатных плат
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">
-                    Монтаж печатных плат
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">
-                    Комплектующие
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">
-                    Доставка
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">
-                    Контакты
-                  </a>
-                </li>
-              </ul>
+              <div class="main-footer__button-wrapper" data-accordion-state="close">
+                <button class="main-footer__button" type="button">
+                  <span class="visually-hidden">
+                    Закрыть
+                  </span>
+                </button>
+                <h2 class="main-footer__section-title"  data-accordion-state="close">
+                  Разделы сайта
+                </h2>
+              </div>
+              <div class="main-footer__accordion-content">
+                <ul class="main-footer__site-list site-list list-style">
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="#">
+                      О Компании
+                    </a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="#">
+                      Продукты
+                    </a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="#">
+                      Производство печатных плат
+                    </a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="#">
+                      Монтаж печатных плат
+                    </a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="#">
+                      Комплектующие
+                    </a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="#">
+                      Доставка
+                    </a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="#">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </section>
             <section class="main-footer__contacts">
-              <button class="main-footer__button" type="button">
-                <span class="visually-hidden">
-                  Закрыть
-                </span>
-              </button>
-              <h2 class="main-footer__section-title">
-                Наш офис
-              </h2>
-              <ul class="main-footer__contact-list contact-list list-style">
-                <li class="contact-list__item">
-                  г. Мытищи, Олимпийский проспект, д.10
-                </li>
-                <li class="contact-list__item">
-                  <a class="contact-list__link" href="tel:+74955894050">
-                    +7 (495) 589-40-50
-                  </a>
-                </li>
-                <li class="contact-list__item">
-                  <a class="contact-list__link" href="tel:+79253895829">
-                    +7 (925) 389-58-29
-                  </a>
-                </li>
-                <li class="contact-list__item">
-                  <a class="contact-list__link" href="tel:+79253647813">
-                    +7 (925) 364-78-13
-                  </a>
-                </li>
-              </ul>
+              <div class="main-footer__button-wrapper" data-accordion-state="close">
+                <button class="main-footer__button" type="button">
+                  <span class="visually-hidden">
+                    Закрыть
+                  </span>
+                </button>
+                <h2 class="main-footer__section-title">
+                  Наш офис
+                </h2>
+              </div>
+              <div class="main-footer__accordion-content">
+                <ul class="main-footer__contact-list contact-list list-style">
+                  <li class="contact-list__item">
+                    г. Мытищи, Олимпийский проспект, д.10
+                  </li>
+                  <li class="contact-list__item">
+                    <a class="contact-list__link" href="tel:+74955894050">
+                      +7 (495) 589-40-50
+                    </a>
+                  </li>
+                  <li class="contact-list__item">
+                    <a class="contact-list__link" href="tel:+79253895829">
+                      +7 (925) 389-58-29
+                    </a>
+                  </li>
+                  <li class="contact-list__item">
+                    <a class="contact-list__link" href="tel:+79253647813">
+                      +7 (925) 364-78-13
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </section>
           </div>
         </div>
@@ -359,11 +374,11 @@
               <div class="form-call__fields-wrapper">
                 <div class="form-call__field">
                   <label class="form-call__input-label visually-hidden" for="modal-name"></label>
-                  <input class="form-call__input" type="text" name="name" id="modal-name" placeholder="Имя">
+                  <input class="form-call__input" type="text" name="name" id="modal-name" placeholder="Имя" required pattern="^[А-Яа-я-]+$" minlength="1">
                 </div>
                 <div class="form-call__field">
                   <label class="form-call__input-label visually-hidden" for="modal-tel"></label>
-                  <input class="form-call__input" type="tel" name="tel" id="modal-tel" placeholder="Телефон">
+                  <input class="form-call__input" type="tel" name="tel" id="modal-tel" placeholder="Телефон" required>
                 </div>
                 <div class="form-call__field">
                   <label class="form-call__input-label visually-hidden" for="modal-question"></label>
@@ -376,7 +391,7 @@
                 </button>
                 <div class="form-call__checkbox custom-checkbox">
                   <label class="custom-checkbox__label">
-                    <input class="custom-checkbox__input visually-hidden" type="checkbox" name="agreement" checked>
+                    <input class="custom-checkbox__input visually-hidden" type="checkbox" name="agreement" required>
                     <span class="custom-checkbox__mark"></span>
                     <span class="custom-checkbox__label">
                       Я согласен на обработку  персональных данных
@@ -389,7 +404,6 @@
         </div>
       </div>
     </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

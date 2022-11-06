@@ -1,8 +1,13 @@
 .logo-footer__link {
   display: flex;
+  cursor: pointer;
 
   img {
     margin-right: 15px;
+  }
+
+  @include hover {
+    opacity: 0.8;
   }
 }
 
