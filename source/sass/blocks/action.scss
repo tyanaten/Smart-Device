@@ -1,7 +1,7 @@
 .action {
   display: flex;
   justify-content: space-between;
-  width: clamp(365px, 37.8%, 461px);
+  width: clamp(365px, 39.3%, 480px);
 
   @include vp-1023 {
     width: max-content;
@@ -12,12 +12,14 @@
 .action__link {
   display: flex;
   min-width: max-content;
-  height: 20px;
+  min-height: 20px;
+  margin-bottom: 10px;
   justify-content: center;
   line-height: 18px;
   color: $color-default-white;
 
   p {
+    max-width: 220px;
     margin: 0;
 
     @include vp-1023 {
@@ -31,6 +33,16 @@
 
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &:nth-child(7n) {
+      margin-right: 0;
+    }
+  }
+
+  @include vp-767 {
+    &:nth-child(3n) {
+      margin-right: 0;
     }
   }
 

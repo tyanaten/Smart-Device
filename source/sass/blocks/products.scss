@@ -6,31 +6,35 @@
   width: 89.7%;
   max-width: $vr-1220;
   margin: 0 auto;
-  padding: 70px 0 140px 0;
+  padding: 67px 0 110px 0;
 
   @include vp-1023 {
     min-width: $vr-670;
     width: 87%;
-    padding: 60px 0 75px 0;
+    padding: 55px 0 45px 0;
   }
 
   @include vp-767 {
     min-width: $vr-270;
     width: 84.3%;
-    padding: 50px 0 86px 0;
+    padding: 50px 0 56px 0;
   }
 }
 
 .products__text {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
 
+  @include vp-1023 {
+    margin-bottom: 37px;
+  }
+
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
     font-size: 28px;
     line-height: 39px;
   }

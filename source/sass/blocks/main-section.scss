@@ -3,6 +3,7 @@
   top: -120px;
   margin-bottom: -120px;
   padding-top: 305px;
+  padding-bottom: 20px;
   min-height: 880px;
   background-color: hsl(204, 67%, 20%);
   background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/microchip-1x.jpg");
@@ -25,14 +26,14 @@
   @include vp-767 {
     top: -70px;
     margin-bottom: -70px;
-    padding-top: 150px;
-    min-height: 560px;
+    padding-top: 140px;
+    min-height: 550px;
     background-position: 26% 0;
   }
 
   h1 {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 31px;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 80px;
     font-weight: 700;
@@ -44,28 +45,32 @@
     @include vp-1023 {
       font-size: 64px;
       line-height: 75px;
-      margin-bottom: 20px;
+      margin-bottom: 2px;
     }
 
     @include vp-767 {
+      margin-bottom: 10px;
       font-size: 36px;
       line-height: 42px;
     }
   }
 
   p {
+    width: 680px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     font-size: 22px;
     font-weight: 400;
     line-height: 34px;
     color: $color-default-white;
 
     @include vp-1023 {
-      margin-bottom: 50px;
+      width: 100%;
+      margin-bottom: 55px;
     }
 
     @include vp-767 {
+      margin-bottom: 42px;
       font-size: 14px;
       line-height: 22px;
     }
@@ -74,7 +79,7 @@
 
 .main-section__button {
   width: 410px;
-  height: 55px;
+  min-height: 55px;
   padding: 15px 25px;
   font-size: 18px;
   line-height: 21px;
@@ -87,7 +92,7 @@
 
   @include vp-767 {
     width: 270px;
-    height: 40px;
+    min-height: 40px;
     margin-left: 0;
     padding: 10px 30px;
     font-size: 14px;
@@ -99,7 +104,7 @@
   width: 89.7%;
   max-width: $vr-1220;
   margin: 0 auto;
-  padding-left: clamp(50px, 10.2%, 120px);
+  padding-left: clamp(50px, 10.2%, 123px);
 
   @include vp-1023 {
     min-width: $vr-670;
