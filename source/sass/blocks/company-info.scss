@@ -8,10 +8,12 @@
   background-image: url("../img/year-1x.png");
   background-repeat: no-repeat;
   background-size: 150px 320px;
+  background-position: top 0 left 0;
 
   @include retina {
     @media (min-width: 768px) {
       background-image: url("../img/year-2x.png");
+      background-position: top 0 left 0;
     }
   }
 
@@ -20,12 +22,13 @@
     width: 87%;
     margin-bottom: 80px;
     padding-left: 175px;
+    background-position: top 3px left -3px;
   }
 
   @include vp-767 {
     width: 84.3%;
     min-width: $vr-270;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
     padding-left: 0;
     background-image: none;
   }
@@ -91,5 +94,6 @@
     min-width: 160px;
     min-height: 35px;
     padding: 9px 40px;
+    padding-bottom: 8px;
   }
 }

@@ -6,13 +6,13 @@
   @include vp-1023 {
     min-width: $vr-670;
     width: 87%;
-    margin: 80px auto;
+    margin: 80px auto 76px auto;
   }
 
   @include vp-767 {
     min-width: $vr-270;
     width: 84.3%;
     margin: 50px auto;
-    margin-bottom: 48px;
+    margin-bottom: 45px;
   }
 }

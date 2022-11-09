@@ -21,7 +21,7 @@
   @include vp-767 {
     min-width: $vr-270;
     width: 84.3%;
-    padding: 35px 0;
+    padding: 32px 0 35px 0;
   }
 
   h2 {
@@ -36,12 +36,12 @@
 
     @include vp-1023 {
       margin-top: 0;
-      margin-bottom: 23px;
+      margin-bottom: 21px;
     }
 
     @include vp-767 {
-      margin-top: 4px;
-      margin-bottom: 0;
+      margin-top: 2px;
+      margin-bottom: 2px;
       cursor: pointer;
     }
   }
@@ -54,7 +54,7 @@
   @include vp-1023 {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 37px;
+    margin-bottom: 38px;
   }
 
   @include vp-767 {
@@ -73,7 +73,7 @@
 
   @include vp-1023 {
     justify-content: end;
-    margin: 5px -3px 0 0;
+    margin: 7px -5px 0 0;
   }
 
   @include vp-767 {
@@ -187,7 +187,9 @@
     height: 19px;
     padding: 2px;
     background-color: inherit;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: top 2px left 2px;
     border: none;
     cursor: pointer;
   }
@@ -203,6 +205,6 @@
 
 .main-footer__accordion-content {
   @include vp-767 {
-    margin-top: 15px;
+    margin-top: 17px;
   }
 }

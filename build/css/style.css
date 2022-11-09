@@ -929,7 +929,7 @@ button,
   max-width: 500px;
   margin-top: 45px;
   padding-left: 15px;
-  padding-right: 3px;
+  padding-right: 5px;
 }
 
 .main-header__set-call {
@@ -1123,7 +1123,7 @@ button,
 
 .privilege-list__item h3 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
   line-height: 38px;
@@ -1134,7 +1134,7 @@ button,
   margin: 0;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: #041827;
 }
 
@@ -1158,6 +1158,7 @@ button,
   background-image: url("../img/year-1x.png");
   background-repeat: no-repeat;
   background-size: 150px 320px;
+  background-position: top 0 left 0;
 }
 
 .company-info__wrapper h2 {
@@ -1470,7 +1471,7 @@ button,
 .form__submit-button {
   width: clamp(205px, 96.4%, 265px);
   min-height: 45px;
-  margin-top: auto;
+  margin-top: 15px;
   padding: 15px 25px;
   padding-bottom: 13px;
   font-size: 16px;
@@ -1484,8 +1485,8 @@ button,
   position: relative;
   right: 5px;
   width: calc(100% - 15px);
-  margin-top: auto;
-  margin-left: 15px;
+  margin-top: 30px;
+  margin-left: 16px;
 }
 
 .form__error {
@@ -1842,6 +1843,7 @@ button,
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 768px), (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
   .company-info__wrapper {
     background-image: url("../img/year-2x.png");
+    background-position: top 0 left 0;
   }
 }
 
@@ -1875,7 +1877,7 @@ button,
 
   .main-footer__wrapper h2 {
     margin-top: 0;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
 
   .main-footer___icons-wrapper {
@@ -1886,14 +1888,14 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 37px;
+    margin-bottom: 38px;
   }
 
   .main-footer__social-list {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
-    margin: 5px -3px 0 0;
+    margin: 7px -5px 0 0;
   }
 
   .main-footer__links-wrapper {
@@ -1941,7 +1943,7 @@ button,
   }
 
   .logo-header__title {
-    margin-bottom: 3px;
+    margin-bottom: 1px;
   }
 
   .action {
@@ -2009,7 +2011,7 @@ button,
   .benefits__wrapper {
     min-width: 670px;
     width: 87%;
-    margin: 80px auto;
+    margin: 80px auto 76px auto;
   }
 
   .privilege-list {
@@ -2017,12 +2019,12 @@ button,
     grid-template-columns: repeat(2, clamp(300px, 47.8%, 450px));
     -ms-grid-rows: (auto)[2];
     grid-template-rows: repeat(2, auto);
-    gap: 20px 29px;
+    gap: 30px;
   }
 
   .privilege-list__item {
     min-height: 360px;
-    padding: 40px 30px 35px 45px;
+    padding: 40px 30px 28px 45px;
   }
 
   .privilege-list__item svg {
@@ -2030,8 +2032,8 @@ button,
   }
 
   .privilege-list__item h3 {
-    margin-bottom: 10px;
-    line-height: 38px;
+    margin-bottom: 8px;
+    line-height: 36px;
   }
 
   .privilege-list__item p {
@@ -2043,6 +2045,7 @@ button,
     width: 87%;
     margin-bottom: 80px;
     padding-left: 175px;
+    background-position: top 3px left -3px;
   }
 
   .company-info__wrapper h2 {
@@ -2083,7 +2086,7 @@ button,
   .product-list__link {
     min-height: 250px;
     padding: 45px;
-    padding-top: 40px;
+    padding-top: 38px;
     background-size: 1494px 817px;
   }
 
@@ -2164,12 +2167,15 @@ button,
 
   .form__checkbox {
     right: 0;
-    margin-bottom: 5px;
-    margin-left: 0;
+    margin: 25px auto 5px 0;
+  }
+
+  .logo-footer img {
+    margin-top: 2px;
   }
 
   .logo-footer__title {
-    margin-bottom: 3px;
+    margin-top: 6px;
   }
 
   .social-list__item:nth-child(3n) {
@@ -2223,12 +2229,12 @@ button,
   .main-footer__wrapper {
     min-width: 270px;
     width: 84.3%;
-    padding: 35px 0;
+    padding: 32px 0 35px 0;
   }
 
   .main-footer__wrapper h2 {
-    margin-top: 4px;
-    margin-bottom: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
     cursor: pointer;
   }
 
@@ -2319,7 +2325,9 @@ button,
     height: 19px;
     padding: 2px;
     background-color: inherit;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: top 2px left 2px;
     border: none;
     cursor: pointer;
   }
@@ -2329,7 +2337,7 @@ button,
   }
 
   .main-footer__accordion-content {
-    margin-top: 15px;
+    margin-top: 17px;
   }
 
   .main-header {
@@ -2348,10 +2356,12 @@ button,
   .main-header__action-buttons {
     max-width: 170px;
     margin-top: 10px;
+    margin-right: 10px;
   }
 
   .logo-header img {
     margin-right: 0;
+    margin-left: 1px;
     width: 35px;
     height: 35px;
   }
@@ -2377,13 +2387,13 @@ button,
   }
 
   .main-section h1 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 36px;
     line-height: 42px;
   }
 
   .main-section p {
-    margin-bottom: 42px;
+    margin-bottom: 44px;
     font-size: 14px;
     line-height: 22px;
   }
@@ -2406,7 +2416,7 @@ button,
     min-width: 270px;
     width: 84.3%;
     margin: 50px auto;
-    margin-bottom: 48px;
+    margin-bottom: 45px;
   }
 
   .privilege-list {
@@ -2443,7 +2453,7 @@ button,
   .company-info__wrapper {
     width: 84.3%;
     min-width: 270px;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
     padding-left: 0;
     background-image: none;
   }
@@ -2463,6 +2473,7 @@ button,
     min-width: 160px;
     min-height: 35px;
     padding: 9px 40px;
+    padding-bottom: 8px;
   }
 
   .product-list__link {
@@ -2498,7 +2509,7 @@ button,
   .products__wrapper {
     min-width: 270px;
     width: 84.3%;
-    padding: 50px 0 56px 0;
+    padding: 48px 0 56px 0;
   }
 
   .products__text {
@@ -2513,7 +2524,7 @@ button,
   }
 
   .form-section .form-section__subtitile {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 30px;
     line-height: 42px;
   }
@@ -2521,12 +2532,12 @@ button,
   .form-section__wrapper {
     min-width: 270px;
     width: 84.3%;
-    padding-top: 45px;
-    padding-bottom: 85px;
+    padding-top: 46px;
+    padding-bottom: 90px;
   }
 
   .form-section__form {
-    margin-top: 29px;
+    margin-top: 34px;
     padding: 0;
   }
 
@@ -2559,11 +2570,16 @@ button,
     width: calc(100% - 10px);
     max-width: 235px;
     min-width: 260px;
-    margin: auto 5px 0 5px;
+    margin: 5px 5px 0 5px;
+  }
+
+  .logo-footer img {
+    margin-top: 3px;
+    margin-left: -4px;
   }
 
   .logo-footer__title {
-    margin: 5px 0;
+    margin-top: 8px;
   }
 
   .contact-list__item {
@@ -2572,7 +2588,7 @@ button,
   }
 
   .contact-list__item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
   }
 
   .contact-list__item:first-child {

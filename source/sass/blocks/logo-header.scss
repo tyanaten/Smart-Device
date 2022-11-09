@@ -7,6 +7,7 @@
 
     @include vp-767 {
       margin-right: 0;
+      margin-left: 1px;
       width: 35px;
       height: 35px;
     }
@@ -34,7 +35,7 @@
   line-height: 29px;
 
   @include vp-1023 {
-    margin-bottom: 3px;
+    margin-bottom: 1px;
   }
 
   @include vp-767 {
