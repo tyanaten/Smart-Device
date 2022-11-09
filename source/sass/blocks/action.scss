@@ -10,26 +10,21 @@
 }
 
 .action__link {
+  position: relative;
   display: flex;
   min-width: max-content;
   min-height: 20px;
   margin-bottom: 10px;
+  padding-left: 35px;
   justify-content: center;
   line-height: 18px;
   color: $color-default-white;
 
-  p {
-    max-width: 220px;
-    margin: 0;
-
-    @include vp-1023 {
-      display: none;
-    }
-  }
 
   @include vp-1023 {
     min-width: 40px;
     height: 40px;
+    padding: 0;
 
     &:not(:last-child) {
       margin-right: 20px;
@@ -49,27 +44,57 @@
   @include hover {
     opacity: 0.5;
   }
-}
-
-.action__icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin-right: 15px;
 
   &--mail {
-    background-image: url("../img/svg/letter.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-right: auto;
+      background-image: url("../img/svg/letter.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @include vp-1023 {
+        margin: auto;
+      }
+    }
   }
 
   &--phone {
-    background-image: url("../img/svg/phone-call.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-right: auto;
+      background-image: url("../img/svg/phone-call.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @include vp-1023 {
+        margin: auto;
+      }
+    }
   }
 
-  @include vp-1023 {
-    margin: auto;
+  p {
+    max-width: 220px;
+    margin: 0;
+
+    @include vp-1023 {
+      display: none;
+    }
   }
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание проекта">
     <title>Smart-Device</title>
     <link rel="preload" href="fonts/pt-Mono-Regular.woff2" as="font">
@@ -16,29 +16,25 @@
     <div class="wrapper">
       <header class="main-header">
         <div class="main-header__wrapper">
-          <div class="main-header__logo logo-header">
-            <a class="logo-header__link">
-              <img class="logo-header__image" src="./img/svg/logo-img.svg" alt="Лого" width="55" height="55">
-              <div class="logo-header__text">
-                <p class="logo-header__title">
-                  Smart Device
-                </p>
-                <p class="logo-header__subtitle">
-                  умные технологии
-                </p>
-              </div>
-            </a>
-          </div>
+          <a class="main-header__logo logo-header">
+            <img class="logo-header__image" src="./img/svg/logo-img.svg" alt="Лого" width="55" height="55">
+            <div class="logo-header__text">
+              <p class="logo-header__title">
+                Smart Device
+              </p>
+              <p class="logo-header__subtitle">
+                умные технологии
+              </p>
+            </div>
+          </a>
           <div class="main-header__action-buttons action">
-            <a class="action__link action__link--mail" href="mailtoinfo@sd.ru">
-              <span class="action__icon action__icon--mail"></span>
-              <p class="action__text">
+            <a class="action__link action__link--mail" href="mailto:info@sd.ru">
+              <p class="action__text action__text--mail">
                 info@sd.ru
               </p>
             </a>
             <a class="action__link action__link--phone" href="tel:+74950005252">
-              <span class="action__icon action__icon--phone"></span>
-              <p class="action__text">
+              <p class="action__text action__text--phone">
                 +7 (495) 000 52 52
               </p>
             </a>
@@ -69,7 +65,7 @@
           <div class="benefits__wrapper">
             <ul class="benefits__list privilege-list list-style">
               <li class="privilege-list__item">
-                <svg class="privilege-list__icon" aria-label="Секундомер" role="img" aria-hidden="true" focusable="false" width="30" height="35">
+                <svg class="privilege-list__icon" aria-hidden="true" focusable="false" width="30" height="35">
                   <use xlink:href="./img/sprite_auto.svg#stopwatch"></use>
                 </svg>
                 <h3 class="privilege-list__title">
@@ -80,7 +76,7 @@
                 </p>
               </li>
               <li class="privilege-list__item">
-                <svg class="privilege-list__icon" aria-label="Иконка 3 людей" role="img" aria-hidden="true" focusable="false" width="33" height="33">
+                <svg class="privilege-list__icon" aria-hidden="true" focusable="false" width="33" height="33">
                   <use xlink:href="./img/sprite_auto.svg#hired"></use>
                 </svg>
                 <h3 class="privilege-list__title">
@@ -91,7 +87,7 @@
                 </p>
               </li>
               <li class="privilege-list__item">
-                <svg class="privilege-list__icon" aria-label="Шапка и очки детектива" role="img" aria-hidden="true" focusable="false" width="33" height="33">
+                <svg class="privilege-list__icon" aria-hidden="true" focusable="false" width="33" height="33">
                   <use xlink:href="./img/sprite_auto.svg#detective"></use>
                 </svg>
                 <h3 class="privilege-list__title">
@@ -102,7 +98,7 @@
                 </p>
               </li>
               <li class="privilege-list__item">
-                <svg class="privilege-list__icon" aria-label="Ценник" role="img" aria-hidden="true" focusable="false" width="30" height="35">
+                <svg class="privilege-list__icon" aria-hidden="true" focusable="false" width="30" height="35">
                   <use xlink:href="./img/sprite_auto.svg#tag"></use>
                 </svg>
                 <h3 class="privilege-list__title">
@@ -184,28 +180,26 @@
               <p class="form-section__text">
                 Мы&nbsp;проконсультируем Вас бесплатно
               </p>
-              <form class="form-section__form form" action="https://echo.htmlacademy.ru/" method="get">
+              <form class="form-section__form form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="form__fields-wrapper">
                   <div class="form__field">
-                    <label class="visually-hidden" for="name"></label>
+                    <label class="visually-hidden" for="name">Имя</label>
                     <input type="text" name="name" id="name" placeholder="Имя" required pattern="^[А-Яа-я-]+$" minlength="1">
                     <div class="form__error visually-hidden"  data-error-message="name">
                       Имя кириллицей без пробелов
                     </div>
                   </div>
                   <div class="form__field">
-                    <label class="visually-hidden" for="tel"></label>
+                    <label class="visually-hidden" for="tel">Номер телефона</label>
                     <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
                     <div class="form__error visually-hidden" data-error-message="tel">
                       Необходим полный номер телефона
                     </div>
                   </div>
                   <div class="form__field form__field--textarea">
-                    <label class="visually-hidden" for="question"></label>
+                    <label class="visually-hidden" for="question">Вопрос</label>
                     <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
                   </div>
-                </div>
-                <div class="form__submit-wrapper">
                   <button class="form__submit-button btn" type="submit" data-form-submit>
                     Задать вопрос
                   </button>
@@ -227,53 +221,49 @@
       <footer class="main-footer">
         <div class="main-footer__wrapper">
           <div class="main-footer___icons-wrapper">
-            <div class="main-footer__logo logo-footer">
-              <a class="logo-footer__link">
-                <img class="logo-footer__image" src="./img/svg/logo-img.svg" alt="Лого" width="55" height="55">
-                <div class="logo-footer__text">
-                  <p class="logo-footer__title">
-                    Smart Device
-                  </p>
-                  <p class="logo-footer__subtitle">
-                    умные технологии
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="main-footer__social-wrapper">
-              <ul class="main-footer__social-list social-list list-style">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="#">
-                    <span class="visually-hidden">
-                      Одноклассники
-                    </span>
-                    <svg class="social-list__icon" aria-label="Одноклассники" role="img" aria-hidden="true" focusable="false" width="30" height="30">
-                      <use xlink:href="./img/sprite_auto.svg#ok"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="#">
-                    <span class="visually-hidden">
-                      Вк
-                    </span>
-                    <svg class="social-list__icon" aria-label="Вконтакте" role="img" aria-hidden="true" focusable="false" width="30" height="30">
-                      <use xlink:href="./img/sprite_auto.svg#vk"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="#">
-                    <span class="visually-hidden">
-                      Пинтерес
-                    </span>
-                    <svg class="social-list__icon" aria-label="Пинтерес" role="img" aria-hidden="true" focusable="false" width="30" height="30">
-                      <use xlink:href="./img/sprite_auto.svg#pinterest"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <a class="main-footer__logo logo-footer">
+              <img class="logo-footer__image" src="./img/svg/logo-img.svg" alt="Лого" width="55" height="55">
+              <div class="logo-footer__text">
+                <p class="logo-footer__title">
+                  Smart Device
+                </p>
+                <p class="logo-footer__subtitle">
+                  умные технологии
+                </p>
+              </div>
+            </a>
+            <ul class="main-footer__social-list social-list list-style">
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <span class="visually-hidden">
+                    Одноклассники
+                  </span>
+                  <svg class="social-list__icon" aria-hidden="true" focusable="false" width="30" height="30">
+                    <use xlink:href="./img/sprite_auto.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <span class="visually-hidden">
+                    Вк
+                  </span>
+                  <svg class="social-list__icon" aria-hidden="true" focusable="false" width="30" height="30">
+                    <use xlink:href="./img/sprite_auto.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <span class="visually-hidden">
+                    Пинтерес
+                  </span>
+                  <svg class="social-list__icon" aria-hidden="true" focusable="false" width="30" height="30">
+                    <use xlink:href="./img/sprite_auto.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="main-footer__links-wrapper">
             <section class="main-footer__footer-links">
@@ -373,8 +363,8 @@
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg class="modal__icon" aria-label="Закрыть" role="img" aria-hidden="true" focusable="false"  width="20" height="20">
+          <button class="modal__close-btn btn-reset" type="button" data-close-modal>
+            <svg class="modal__icon" aria-hidden="true" focusable="false"  width="20" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>
@@ -385,28 +375,26 @@
             <p class="modal__text">
               Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время
             </p>
-            <form class="modal__form form-call" action="https://echo.htmlacademy.ru/" method="get">
+            <form class="modal__form form-call" action="https://echo.htmlacademy.ru/" method="post">
               <div class="form-call__fields-wrapper">
                 <div class="form-call__field">
-                  <label class="visually-hidden" for="modal-name"></label>
+                  <label class="visually-hidden" for="modal-name">Имя</label>
                   <input type="text" name="name" id="modal-name" placeholder="Имя" required pattern="^[А-Яа-я-]+$" minlength="1">
                   <div class="form-call__error visually-hidden"  data-error-message="name">
                     Имя кириллицей без пробелов
                   </div>
                 </div>
                 <div class="form-call__field">
-                  <label class="visually-hidden" for="modal-tel"></label>
+                  <label class="visually-hidden" for="modal-tel">Номер телефона</label>
                   <input type="tel" name="tel" id="modal-tel" placeholder="Телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
                   <div class="form-call__error visually-hidden" data-error-message="tel">
                     Необходим полный номер телефона
                   </div>
                 </div>
                 <div class="form-call__field">
-                  <label class="visually-hidden" for="modal-question"></label>
+                  <label class="visually-hidden" for="modal-question">Вопрос</label>
                   <textarea name="question" id="modal-question" placeholder="Ваш вопрос"></textarea>
                 </div>
-              </div>
-              <div class="form-call__submit-wrapper">
                 <button class="form-call__submit-button btn" type="submit" data-form-submit>
                   Отправить
                 </button>

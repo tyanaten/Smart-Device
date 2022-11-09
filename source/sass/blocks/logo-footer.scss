@@ -1,4 +1,4 @@
-.logo-footer__link {
+.logo-footer {
   display: flex;
   cursor: pointer;
 
@@ -20,7 +20,7 @@
 .logo-footer__title {
   margin: 5px 0;
   margin-bottom: 2px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 25px;
   font-weight: 700;
   line-height: 29px;
@@ -36,7 +36,7 @@
 
 .logo-footer__subtitle {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;

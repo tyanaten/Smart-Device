@@ -43,5 +43,3 @@ const breakpointChecker = () => {
 
 breakpoint.addListener(breakpointChecker);
 breakpointChecker();
-
-
