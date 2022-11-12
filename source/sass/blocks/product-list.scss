@@ -40,9 +40,9 @@
   min-height: 100%;
   padding: 48px 0 40px 40px;
   background-color: hsl(204, 67%, 20%);
-  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-1x.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-product-1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1494px 817px;
 
   @include hover {
     border: 1px solid $color-blue;
@@ -50,14 +50,13 @@
   }
 
   @include retina {
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-product-2x.jpg");
   }
 
   @include vp-1023 {
     min-height: 250px;
     padding: 45px;
     padding-top: 38px;
-    background-size: 1494px 817px;
   }
 
   @include vp-767 {
@@ -85,38 +84,38 @@
   }
 
   &--production {
-    background-position: 17% 80%;
+    background-position: 17% 70%;
 
     @include vp-1023 {
-      background-position: 15% 100%;
+      background-position: 30% 97%;
     }
 
     @include vp-767 {
-      background-position: 31% 57%;
+      background-position: 31% 53%;
     }
   }
 
   &--mounting {
-    background-position: 47% 0;
+    background-position: 47% 74%;
 
     @include vp-1023 {
-      background-position: 72% 59%;
+      background-position: 76% 55%;
     }
 
     @include vp-767 {
-      background-position: 31% 100%;
+      background-position: 30% 95%;
     }
   }
 
   &--details {
-    background-position: 77% 0;
+    background-position: 78% 64%;
 
     @include vp-1023 {
-      background-position: 20% 65%;
+      background-position: 18% 63%;
     }
 
     @include vp-767 {
-      background-position: 72% 72%;
+      background-position: 72% 70%;
     }
   }
 

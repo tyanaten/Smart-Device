@@ -807,7 +807,7 @@ button,
   margin: 0;
   margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 42px;
 }
 
@@ -1057,6 +1057,7 @@ button,
 .main-section h1 {
   margin: 0;
   margin-bottom: 31px;
+  margin-left: 2px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   font-weight: 700;
@@ -1069,7 +1070,8 @@ button,
 .main-section p {
   width: 680px;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
+  margin-left: 2px;
   font-size: 22px;
   font-weight: 400;
   line-height: 34px;
@@ -1079,6 +1081,7 @@ button,
 .main-section__button {
   width: 410px;
   min-height: 55px;
+  margin-left: 2px;
   padding: 15px 25px;
   font-size: 18px;
   line-height: 21px;
@@ -1117,13 +1120,13 @@ button,
 }
 
 .privilege-list__item svg {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   fill: #00b2ff;
 }
 
 .privilege-list__item h3 {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
   line-height: 38px;
@@ -1134,8 +1137,25 @@ button,
   margin: 0;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 22px;
   color: #041827;
+}
+
+.privilege-list__item:nth-child(3n) h3,
+.privilege-list__item:nth-child(4n) h3 {
+  margin-top: 5px;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.privilege-list__item:nth-child(3n) p,
+.privilege-list__item:nth-child(4n) p {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.privilege-list__item:nth-child(3n) svg {
+  margin-left: -5px;
 }
 
 .privilege-list__item::before {
@@ -1172,7 +1192,7 @@ button,
 
 .company-info__wrapper p {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   line-height: 22px;
 }
 
@@ -1218,11 +1238,11 @@ button,
   min-height: 100%;
   padding: 48px 0 40px 40px;
   background-color: hsl(204deg, 67%, 20%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/microchip-1x.jpg");
-  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-1x.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-1x.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/microchip-product-1x.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-product-1x.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-product-1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1494px 817px;
 }
 
 .product-list__link::after {
@@ -1240,15 +1260,15 @@ button,
 }
 
 .product-list__link--production {
-  background-position: 17% 80%;
+  background-position: 17% 70%;
 }
 
 .product-list__link--mounting {
-  background-position: 47% 0;
+  background-position: 47% 74%;
 }
 
 .product-list__link--details {
-  background-position: 77% 0;
+  background-position: 78% 64%;
 }
 
 .product-list__link p {
@@ -1871,7 +1891,7 @@ button,
     flex-direction: column;
     min-width: 670px;
     width: 87%;
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 65px;
   }
 
@@ -1990,12 +2010,14 @@ button,
   .main-section h1 {
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 2px;
+    margin: 0;
+    margin-bottom: 1px;
   }
 
   .main-section p {
     width: 100%;
-    margin-bottom: 55px;
+    margin: 0;
+    margin-bottom: 56px;
   }
 
   .main-section__button {
@@ -2028,16 +2050,41 @@ button,
   }
 
   .privilege-list__item svg {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 
   .privilege-list__item h3 {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     line-height: 36px;
   }
 
   .privilege-list__item p {
     line-height: 22px;
+  }
+
+  .privilege-list__item:nth-child(3n) h3,
+  .privilege-list__item:nth-child(4n) h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .privilege-list__item:nth-child(3n) p,
+  .privilege-list__item:nth-child(4n) p {
+    line-height: 21px;
+  }
+
+  .privilege-list__item:nth-child(3n) svg {
+    margin: 0;
+  }
+
+  .privilege-list__item:nth-child(4n) svg {
+    margin: 0;
+  }
+
+  .privilege-list__item:nth-child(4n) p {
+    margin-top: -4px;
+    line-height: 21px;
   }
 
   .company-info__wrapper {
@@ -2087,19 +2134,18 @@ button,
     min-height: 250px;
     padding: 45px;
     padding-top: 38px;
-    background-size: 1494px 817px;
   }
 
   .product-list__link--production {
-    background-position: 15% 100%;
+    background-position: 30% 97%;
   }
 
   .product-list__link--mounting {
-    background-position: 72% 59%;
+    background-position: 76% 55%;
   }
 
   .product-list__link--details {
-    background-position: 20% 65%;
+    background-position: 18% 63%;
   }
 
   .product-list__link p {
@@ -2134,7 +2180,7 @@ button,
     min-width: 670px;
     width: 87%;
     min-height: 100%;
-    padding: 45px 0 123px 0;
+    padding: 45px 0 126px 0;
   }
 
   .form-section__wrapper::before {
@@ -2196,6 +2242,7 @@ button,
     max-height: -webkit-max-content;
     max-height: -moz-max-content;
     max-height: max-content;
+    margin-top: 23px;
   }
 
   .site-list__item {
@@ -2450,16 +2497,45 @@ button,
     line-height: 19px;
   }
 
+  .privilege-list__item:nth-child(3n) h3,
+  .privilege-list__item:nth-child(4n) h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .privilege-list__item:nth-child(3n) p,
+  .privilege-list__item:nth-child(4n) p {
+    margin-bottom: 0;
+    line-height: 19px;
+  }
+
+  .privilege-list__item:nth-child(3n) svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .privilege-list__item:first-child svg,
+  .privilege-list__item:nth-child(2n) svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .privilege-list__item:nth-child(4n) p {
+    margin-top: 0;
+    line-height: 19px;
+  }
+
   .company-info__wrapper {
     width: 84.3%;
     min-width: 270px;
-    margin-bottom: 67px;
+    margin-bottom: 69px;
     padding-left: 0;
     background-image: none;
   }
 
   .company-info__wrapper h2 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 28px;
     line-height: 39px;
   }
@@ -2487,15 +2563,15 @@ button,
   }
 
   .product-list__link--production {
-    background-position: 31% 57%;
+    background-position: 31% 53%;
   }
 
   .product-list__link--mounting {
-    background-position: 31% 100%;
+    background-position: 30% 95%;
   }
 
   .product-list__link--details {
-    background-position: 72% 72%;
+    background-position: 72% 70%;
   }
 
   .product-list__link p {
@@ -2595,6 +2671,10 @@ button,
     margin-bottom: 18px;
   }
 
+  .site-list {
+    margin: 0;
+  }
+
   .site-list__item {
     width: 100%;
     font-size: 14px;
@@ -2691,9 +2771,9 @@ button,
   }
 
   .product-list__link {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/microchip-2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/microchip-product-2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-product-2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/microchip-product-2x.jpg");
   }
 
   .form-section__wrapper::before {
