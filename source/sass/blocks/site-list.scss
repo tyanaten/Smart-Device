@@ -2,15 +2,30 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-width: 380px;
-  max-width: 420px;
-  max-height: 150px;
+  min-width: max-content;
+  max-width: 210px;
+
+  &--extended {
+    margin-left: 30px;
+  }
 
   @include vp-1023 {
     min-width: 220px;
     max-width: 270px;
     max-height: max-content;
     margin-top: 23px;
+
+    &--extended {
+      margin: 0;
+
+      .site-list__item {
+        @include vp-767 {
+          &:last-child {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
   }
 
   @include vp-767 {
@@ -21,6 +36,7 @@
 .site-list__item {
   max-width: 205px;
   margin-right: 15px;
+  margin-bottom: 10px;
   line-height: 20px;
 
   a {
@@ -29,14 +45,6 @@
     @include hover-focus {
       color: $color-blue;
     }
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
-  &:nth-child(4n) {
-    margin-bottom: 0;
   }
 
   @include vp-1023 {

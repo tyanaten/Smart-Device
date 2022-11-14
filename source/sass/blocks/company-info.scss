@@ -81,13 +81,13 @@
 .company-info__button {
   min-width: 180px;
   min-height: 45px;
-  margin-top: 42px;
+  margin-top: 40px;
   padding: 14px 50px;
   color: $color-blue;
   border-color: $color-blue;
 
   @include vp-1023 {
-    margin-top: -6px;
+    margin-top: -8px;
   }
 
   @include vp-767 {

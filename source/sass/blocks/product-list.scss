@@ -1,6 +1,6 @@
 .product-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   min-height: 650px;
 
@@ -10,16 +10,12 @@
 }
 
 .product-list__item {
-  width: clamp(120px, 28.7%, 350px);
+  width: clamp(264px, 28.7%, 350px);
   min-height: 650px;
   margin-bottom: 30px;
 
   &:not(:nth-child(3n)) {
-    margin-right: 85px;
-
-    @media (max-width: 1350px) {
-      margin-right: 20px;
-    }
+    margin-right: (20px, 7%, 85px);
   }
 
   @include vp-1023 {

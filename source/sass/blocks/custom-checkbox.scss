@@ -20,6 +20,12 @@
       display: block;
     }
   }
+
+  &:focus-within {
+    .custom-checkbox__mark {
+      outline: 2px solid $color-default-black;
+    }
+  }
 }
 
 .custom-checkbox__mark {
